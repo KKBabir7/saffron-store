@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/saffron-store/static/css/main.94af20f6.css",
+    "main.js": "/saffron-store/static/js/main.268471a5.js",
+    "static/media/1.jpg": "/saffron-store/static/media/1.bf1326a0aaad71fe303c.jpg",
+    "static/media/slick.svg": "/saffron-store/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/saffron-store/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/saffron-store/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/saffron-store/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/saffron-store/index.html",
+    "static/media/angle-right.svg": "/saffron-store/static/media/angle-right.23b1855c90f5465ef5e6.svg",
+    "static/media/angle-left.svg": "/saffron-store/static/media/angle-left.5a5519773ea246155ff6.svg",
+    "main.94af20f6.css.map": "/saffron-store/static/css/main.94af20f6.css.map",
+    "main.268471a5.js.map": "/saffron-store/static/js/main.268471a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94af20f6.css",
+    "static/js/main.268471a5.js"
+  ]
+}
