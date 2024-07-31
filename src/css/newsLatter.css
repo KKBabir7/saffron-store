@@ -1,0 +1,55 @@
+.newsLatter .card{
+    background: var(--CommonColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 0px;
+    padding: 20px 30px;
+}
+.newsLatter .card .scoileApp ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.newsLatter .card .scoileApp ul li a{
+    color: var(--WhiteColor);
+    font-size: 18px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+.newsLatter .card .scoileApp ul li a:hover{
+   transform: scale(1.1);
+   opacity: 0.6;
+}
+.newsLatter .card .fromSubmition input{
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+  font-size: 14px;
+  width: 250px;
+  height: 40px;
+}
+.newsLatter .card .fromSubmition #basic-addon2{
+    background: transparent;
+    color: var(--WhiteColor);
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.newsLatter .card .fromSubmition #basic-addon2:hover{
+ background: #2b2b2b;
+}
+.newsLatter .card .signunote{
+    color: var(--WhiteColor);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}

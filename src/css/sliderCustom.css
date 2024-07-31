@@ -1,0 +1,74 @@
+
+.slider-container {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    /* Ensure positioning context for arrows */
+    padding: 0 0px;
+    /* Adjust padding to accommodate arrows */
+}
+
+/* Custom CSS for slider arrows */
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Center vertically */
+    position: absolute;
+    /* Position arrows absolutely within the container */
+}
+
+.slick-prev {
+    left: 0px;
+    /* Adjust as needed */
+}
+
+.slick-next {
+    right: 0px;
+    /* Adjust as needed */
+}
+.slick-next,.slick-prev{
+    background: var(--WhiteColor) !important;
+    font-size: 7px;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 18px -4px rgba(143, 143, 143, 0.5);
+}
+.slick-next:hover,.slick-prev:hover{
+    opacity: 0.7;
+
+}
+.slick-prev:before,
+.slick-next:before {
+    font-size: 40px;
+    color: black;
+    /* Change color if needed */
+}
+.slick-next:before{
+    content: '';
+    background: url("../../public/imgs/common-icon/angle-right.svg") no-repeat;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 17px;
+    height: 15px;
+    position: absolute;
+    background-size: 15px;
+}
+.slick-prev:before{
+    content: '';
+    background: url("../../public/imgs/common-icon/angle-left.svg") no-repeat;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 17px;
+    height: 15px;
+    position: absolute;
+    background-size: 15px;
+}

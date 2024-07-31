@@ -1,0 +1,231 @@
+.offerProduct{
+    margin-top: 150px !important;
+}
+.offerProductCard {
+    margin-top: 20px;
+   
+}
+.offerProductCard .card{
+    position: relative;
+    border: none;
+    border-radius: 0px;
+    height: 200px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.offerProductCard .card:hover img{
+    transform: scale(1.1);
+}
+.offerProductCard img{
+    width: 100%;
+    height: 200px;
+    transition: all 0.3s ease;
+
+}
+
+.offercardDes{
+ position: absolute;
+ bottom: 10px;
+ left: 20px;
+ z-index: 90;
+ width: 100%;
+ 
+}
+.offercardDes:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.6);
+    left: -20px;
+    bottom: -10px;
+    z-index: -1;
+}
+.offercardDes h3{
+    color: var(--TitleColor);
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+.offercardDes p{
+    color: var(--TitleColor);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    opacity: 0.9;
+}
+.offercardDes p span{
+    font-weight: 700;
+    color: var(--CommonColor);
+}
+.offercardDes .btn{
+    border-radius: 0px;
+    font-size: 13px;
+    font-weight: 700;
+    background: var(--CommonColor);
+    border: none !important;
+    outline: none !important;
+    padding: 3px 10px;
+    transition: all 0.3s ease;
+}
+.offercardDes .btn:hover{
+    opacity: 0.6;
+}
+
+
+
+
+.video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #ba1f24;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fa183d;
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  
+  .video-play-button:hover:after {
+    background-color: darken(#fa183d, 10%);
+  }
+  
+  .video-play-button img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #fff;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  .video-overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.80);
+    opacity: 0;
+    transition: all ease 500ms;
+  }
+  
+  .video-overlay.open {
+    position: fixed;
+    z-index: 999999;
+    opacity: 1;
+  }
+  
+  .video-overlay-close {
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  
+  .video-overlay-close:hover {
+    color: #fa183d;
+  }
+  
+  .video-overlay iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 0 15px rgba(0,0,0,0.75);
+  }
+  .videoposter{
+    height: 420px;
+    position: relative;
+  }
+  .videoposter img{
+    width: 100%;
+    height: 100%;
+   
+  }
+  .videoposter:after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
+    position: absolute;
+
+  }
+
+
+  .oferselertop .card{
+   border: none;
+   height: 420px;
+   border-radius: 0px;
+  }
+  .oferselertop .card img{
+    width: 100%;
+    height: 100%;
+  }

@@ -1,0 +1,303 @@
+/* .hero .itemsCard .itemsTitle .itemsContentAnimated:nth-child(1) {
+    opacity: 0;
+    transform: translateY(-120px) scale(0.7) rotateX(90deg);
+    transition: opacity 3s ease, transform 3s ease;
+}
+.hero .itemsCard  .sologan .itemsContentAnimated{
+    opacity: 0;
+    transform: translateX(200px) scale(0.7) rotateX(90deg);
+    transition: opacity 3s ease, transform 3s ease;
+}
+.hero .itemsCard .itemsTitle .itemsContentAnimated:nth-child(2) {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.6) rotateX(90deg);
+    transition: opacity 2.5s ease, transform 2.5s ease;
+}
+
+
+
+.hero .itemsCard .itemsTitle .itemsContentAnimated:nth-child(1).animated {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotateX(0deg);
+}
+
+.hero .itemsCard .itemsTitle .itemsContentAnimated:nth-child(2).animated {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotateX(0deg);
+}
+
+.hero .itemsCard .sologan  .itemsContentAnimated.animated{
+    opacity: 1;
+    transform: translateY(0) scale(1) rotateX(0deg);
+}
+
+
+.hero .itemsCard  .exploreshopBtn .itemsContentAnimated{
+    opacity: 0;
+    transform: translateX(-150px) scale(0.7) rotateX(90deg);
+    transition: opacity 3.5s ease, transform 3.5s ease;
+}
+.hero .itemsCard  .exploreshopBtn .itemsContentAnimated.animated {
+    opacity: 1;
+    transform: translateX(0) scale(1) rotateX(0deg);
+} */
+.hero {
+    width: 100%;
+    overflow: hidden;
+    /* Prevent x-axis overflow within the hero section */
+}
+.hero .heroSlide{
+    position: relative;
+    overflow: hidden;
+}
+.hero .heroSlide img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.hero .slider-container .heroSlide::before {
+    content: '';
+    position: absolute;
+    transform: rotate(131deg);
+    top: -1142px;
+    left: -648px;
+    width: 100%;
+    height: 329%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero .heroCard {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 10px 20px;
+}
+.hero .heroCard h1{
+    color: var(--WhiteColor);
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 68px;
+}
+.heroCard .sologan{
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-top: 12px;
+}
+.heroCard .sologan p{
+    line-height: 25px;
+}
+.exploreshopBtn a{
+    display: flex;
+    gap: 28px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    /* width: 235px; */
+    font-size: 22px;
+    font-weight: 600;
+    overflow: hidden;
+    border: none;
+    background: rgb(246,140,30);
+    padding: 0px 12px;
+    overflow: hidden;
+  
+}
+.exploreshopBtn a:hover{
+    background: var(--CommonColor);
+    transition: all 0.5s ease !important;
+}
+
+.exploreshopBtn a p{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+}
+.exploreshopBtn a p:after{
+    content: '';
+    background: var(--CommonColor);
+    width: 106px;
+    position: absolute;
+    height: 110px;
+    left: -59px;
+    top: -53px;
+    z-index: -1;
+    transform: rotate(23deg);
+}
+.exploreshopBtn a:hover p:after{
+    background:rgb(246,140,30);
+}
+
+.exploreshopBtn .freshProduct{
+    color: rgb(246,140,30);
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 0px 2px rgb(65 65 65 / 30%);
+}
+  /** Text Animation **/
+
+.hero .slick-active .heroCard .heroTitle .slideContent:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0px) scale(1) rotateX(0deg);
+    animation: slide0 3s ;
+}
+@keyframes slide0 {
+    0% {
+        opacity: 0;
+        transform: translateY(-120px) scale(0.7) rotateX(90deg);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1) rotateX(0deg);
+       
+    }
+  }
+
+.hero .slick-active .heroCard .heroTitle .slideContent:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0px) scale(1) rotateX(0deg);
+    animation: slide1 3s ;
+}
+@keyframes slide1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px) scale(0.7) rotateX(90deg);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1) rotateX(0deg);
+       
+    }
+  }
+
+.hero .slick-active  .heroCard   .sologan .slideContent{
+    opacity: 1;
+    transform: translateY(0px) scale(1) rotateX(0deg);
+    animation: slide2 3s ;
+}
+
+@keyframes slide2 {
+    0% {
+        opacity: 0;
+        transform: translateY(200px) scale(0.7) rotateX(90deg);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1) rotateX(0deg);
+       
+    }
+  }
+
+
+.hero .slick-active  .heroCard   .exploreshopBtn .slideContent{
+    opacity: 1;
+    transform: translateY(0px) scale(1) rotateX(0deg);
+    animation: slide3 3s ;
+}
+
+@keyframes slide3 {
+    0% {
+        opacity: 0;
+        transform: translateY(200px) scale(0.7) rotateX(90deg);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1) rotateX(0deg);
+       
+    }
+  }
+
+
+
+
+
+
+.heroCard .lineAnimated span:nth-child(1){
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to right, #fc5705, #ffffff);
+	animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+.heroCard .lineAnimated span:nth-child(2){
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 1px;
+	background: linear-gradient(to bottom, #fc5705, #ffffff);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animate2 {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+.heroCard .lineAnimated span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to left, #fc5705, #ffffff);
+	animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.heroCard .lineAnimated span:nth-child(4){
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 1px;
+	background: linear-gradient(to top,#fc5705, #ffffff);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4 {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}

@@ -1,0 +1,135 @@
+.productCard{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+}
+
+.productCard .productsThumb{
+    height: 235px;
+    width: 100%;
+    text-align: center;
+    background: #F6F6F6;
+    
+}
+.productCard .productsThumbLink{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+    display: flex;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+}
+.productCard .productsThumb .productImg{
+    transition: all 0.3s ease;
+}
+.productCard .productsThumb .productImg img{
+  width: 140px;
+  height: 140px;
+}
+.productCard:hover .productsThumb .productImg{
+  transform: scale(1.2);
+}
+.productCard .productLable{
+    position: absolute;
+    top: 10px;
+    z-index: 90;
+    left: 10px;
+    transition: all 0.5s ease;
+}
+.productCard .onsale {
+    background: 0 0;
+    color: #ed1d24;
+    border: 1px solid #ed1d24;
+    margin-bottom: 5px;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.productCard .productMenuList{
+    position: absolute;
+    bottom: 0px;
+    right: -90px;
+    z-index: 90;
+}
+.productCard .productMenuList ul{
+    
+}
+.productCard .productMenuList li{
+    list-style-type: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background: var(--WhiteColor);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+    justify-content: center;
+    padding: 2px;
+    flex-direction: column;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    transition: all 0.3s ease;
+}
+.productCard .productMenuList li:hover {
+   background: var(--CommonColor);
+   color: var(--WhiteColor);
+}
+
+.productCard:hover .productMenuList{
+    right: 10px;
+    transition: all 0.3s ease;
+}
+
+.productCaption{
+    height: 120px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+.ProductReview .rating-stars ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.ProductReview .rating-stars ul > li.star {
+    display: inline-block;
+}
+.ProductReview .rating-stars li{
+    font-size: 14px;
+}
+.ProductReview p{
+    font-size: 14px;
+    color: var(--ratingColorNone);
+}
+.productName a{
+    text-decoration: none;
+    font-size: 22px;
+
+}
+.productName a h3{
+    color: var(--TitleColor);
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.productName a h3:hover{
+    color: var(--CommonColor);
+}
+.productPrize h4{
+    color: var(--CommonColor);
+    font-size: 16px;
+    font-weight: 600;
+}

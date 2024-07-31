@@ -1,0 +1,119 @@
+.topHeader-navbar{
+    background: #f1f1f1;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.topheader-content p{
+  font-size: var(--FontSize12);
+  border-right: 1px solid rgb(205, 205, 205);
+  padding-right: 5px;
+  color: #939393;
+ 
+}
+.topheader-content p:nth-child(even){
+    border-right: none;
+}
+
+
+.topheader-content .dropdown-toggle{
+  background: none;
+  font-size: var(--FontSize12);
+  padding: 0px 0px;
+  color: #939393;
+  border: none;
+}
+
+.searchbar-navbar{
+    background: var(--WhiteColor) !important;
+}
+.navbar-brand,.navbar-brand img{
+    width: 150px;
+}
+.search-block .form-control{
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none !important;
+}
+.search-block .form-control:hover,.search-block .form-control:focus{
+    border-color: var(--CommonColor);
+    
+}
+.search-block .btn,.search-block .btn:focus{
+    background: var(--CommonColor);
+    color: var(--WhiteColor);
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid var(--CommonColor);
+}
+.login-signin-block{
+    padding: 0px 10px;
+    background: var(--BtnCommonColor);
+    text-transform: capitalize;
+    color: var(--WhiteColor);
+    font-size: var(--FontSize13);
+    border-radius: 5px;
+}
+.login-signin-block a{
+    line-height: 35px;
+}
+.login-signin-block p{
+    font-size: 18px;
+    margin-top: -3px;
+    margin-right: 3px;
+}
+
+.login-signin-cart{
+    white-space: nowrap;
+}
+.cart-block p{
+    position: relative;
+    font-size: var(--FontSize28);
+    cursor: pointer;
+    color: var(--GrayColor);
+}
+.cart-block p span{
+    position: absolute;
+    font-size: var(--FontSize10);
+    background: var(--BtnCommonColor);
+    color: var(--WhiteColor);
+    border-radius: 100px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -2px;
+    right: -10px;
+    text-align: center;
+}
+
+
+
+
+
+
+.main-navbar-menu{
+    background: var(--WhiteColor) !important;
+}
+.catagory-block .dropdown-toggle::after{
+ display: none;
+}
+.catagory-block .dropdown-toggle{
+    background: var(--BtnCommonColor);
+    color: var(--WhiteColor) !important;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.main-navbar-menu .nav-link{
+    font-size: var(--FontSize14);
+    font-weight: 500;
+    color: var(--GrayColor);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transition: all 0.3s ease;
+}
+.main-navbar-menu .nav-link:hover{
+    color: var(--CommonColor);
+}

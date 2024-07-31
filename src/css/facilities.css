@@ -1,0 +1,28 @@
+.facilities .col-md-3{
+    padding: 0;
+}
+.facilities .card{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: 20px;
+ padding: 10px;
+ border-radius: 0px;
+ border: none;
+ border-right: 1px solid #dfdfdf;
+}
+.facilities .borderleft{
+    border-right: none;
+}
+.facilities .card h3{
+    font-size: 15px;
+    color: var(--TitleColor);
+    font-weight: 700;
+}
+.facilities .card .facilitiesImg {
+    font-size: 40px;
+    color: var(--CommonColor);
+}
+.facilities .card p{
+    font-size: 14px;
+}
