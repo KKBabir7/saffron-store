@@ -71,7 +71,7 @@ const Navigation = () => {
   useEffect(() => {
     const fetchNavigationData = async () => {
       try {
-        const response = await fetch("../api/navigationData.json");
+        const response = await fetch("/../api/navigationData.json");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
