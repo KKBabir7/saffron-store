@@ -16,7 +16,7 @@ const ProductCard = () => {
                 <span class="onsale">-13%</span>
               </div>
               <div className="productImg">
-                <img src="../imgs/product/1.png" />
+                <img src="./public/imgs/product/1.png" />
               </div>
               <div className="productMenuList">
                 <ul>
