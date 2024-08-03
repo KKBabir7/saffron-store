@@ -1,25 +1,15 @@
 {
   "logo": "/imgs/logo/saffron.svg",
   "menu": [
-    {
-      "name": "Catagory",
-      "items": [
-        { "name": "Action", "linkmenus": "#action1" },
-        { "name": "Another action", "linkmenus": "#action2" },
-        { "name": "Something else here", "linkmenus": "#something" }
-      ]
-    },
-    { "name": "Home", "linkmenus": "#home","icon":"BsHouseDoor" },
-    { "name": "Pages", "linkmenus": "#Blog","icon":"BsNut" },
-    { "name": "Blog", "linkmenus": "#Blog","icon":"BsNewspaper" },
-    { "name": "About Us", "linkmenus": "#about","icon":"BsListNested" },
-    { "name": "FAQs", "linkmenus": "#faqs","icon":"BsPatchQuestion" },
-    { "name": "Contact Us", "linkmenus": "#contact","icon":"BsTelephonePlus" }
-    
-   
+    { "name": "Home", "linkmenus": "#home", "icon": "BsFillHouseDoorFill" },
+    { "name": "Pages", "linkmenus": "#pages", "icon": "BsNut" },
+    { "name": "Blog", "linkmenus": "#blog", "icon": "BsNewspaper" },
+    { "name": "About Us", "linkmenus": "#about" },
+    { "name": "FAQs", "linkmenus": "#faqs" },
+    { "name": "Contact Us", "linkmenus": "#contact" }
   ],
   "signMenu": {
-    "name": "sign up",
+    "name": "Sign up",
     "linkmenus": "#sign"
   },
   "logMenu": {
@@ -27,4 +17,3 @@
     "linkmenus": "#log"
   }
 }
-
